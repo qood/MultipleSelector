@@ -6,13 +6,13 @@ import jp.qood.mselector.SelectorItem;
 
 public class CatcherHolder {
 
-	private MultipleSelector selector = null;
+	private MultipleSelector mSelector = null;
 
-	private OnClickCatcher clickCatcher = null;
-	private OnTouchCatcher touchCatcher = null;
+	private OnClickCatcher mClickCatcher = null;
+	private OnTouchCatcher mTouchCatcher = null;
 
 	public CatcherHolder(MultipleSelector selector_){
-		selector = selector_;
+		this.mSelector = selector_;
 	}
 
 	public void registerItem(SelectorItem item_){
@@ -20,10 +20,10 @@ public class CatcherHolder {
 		switch (item_.eventType) {
 
 		case MultiEvent.EVENT_TYPE_ONCLICK:
-			if(clickCatcher == null){
-				clickCatcher = new OnClickCatcher(selector);
+			if(mClickCatcher == null){
+				mClickCatcher = new OnClickCatcher(mSelector);
 			}
-			clickCatcher.registerItem(item_);
+			mClickCatcher.registerItem(item_);
 			break;
 		case MultiEvent.EVENT_TYPE_ONTOUCH:
 

@@ -17,19 +17,23 @@ import android.view.View.OnTouchListener;
 public class OnTouchCatcher extends BaseEventCatcher implements OnTouchListener{
 
 	/** Viewに対応するグループIDを保存 **/
-	private HashMap<View, Integer> map = new HashMap<View, Integer>();
+	private HashMap<View, Integer> mIDHashMap = new HashMap<View, Integer>();
 
+	/**
+	 * Constructor
+	 * @param selector_
+	 */
 	public OnTouchCatcher(MultipleSelector selector_) {
 		super(selector_);
 	}
 
 	public void registerItem(SelectorItem item){
 		item.view.setOnTouchListener(this);
-		map.put(item.view, item.groupId);
+		mIDHashMap.put(item.view, item.groupId);
 	}
 
 	@Override
-	public boolean onTouch(View view_, MotionEvent tEvent_) {
-		return (Boolean) onEvent(view_, map.get(view_), new MultiEvent(MultiEvent.EVENT_TYPE_ONTOUCH, tEvent_));
+	public boolean onTouch(View view_, MotionEvent touchEvent_) {
+		return (Boolean) onEvent(view_, mIDHashMap.get(view_), new MultiEvent(MultiEvent.EVENT_TYPE_ONTOUCH, touchEvent_));
 	}
 }
