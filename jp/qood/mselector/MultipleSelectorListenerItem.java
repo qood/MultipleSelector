@@ -1,4 +1,4 @@
-package jp.kanja.mselector;
+package jp.qood.mselector;
 
 public class MultipleSelectorListenerItem {
 

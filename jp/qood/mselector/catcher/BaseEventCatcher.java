@@ -1,8 +1,8 @@
-package jp.kanja.mselector.catcher;
+package jp.qood.mselector.catcher;
 
-import jp.kanja.mselector.MultiEvent;
-import jp.kanja.mselector.MultipleSelector;
-import jp.kanja.mselector.SelectorItem;
+import jp.qood.mselector.MultiEvent;
+import jp.qood.mselector.MultipleSelector;
+import jp.qood.mselector.SelectorItem;
 import android.R.integer;
 import android.view.View;
 

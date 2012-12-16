@@ -1,8 +1,8 @@
-package jp.kanja.mselector;
+package jp.qood.mselector;
 
 import java.util.ArrayList;
 
-import jp.kanja.mselector.catcher.CatcherHolder;
+import jp.qood.mselector.catcher.CatcherHolder;
 
 import android.util.SparseArray;
 import android.view.View;
@@ -10,7 +10,7 @@ import android.view.View;
 /**
  * MultipleSelector
  * 本体クラス。インスタンス化して使う
- * @author Shohei Horiguchi
+ * @author qood
  *
  */
 public class MultipleSelector {

@@ -1,10 +1,10 @@
-package jp.kanja.mselector.catcher;
+package jp.qood.mselector.catcher;
 
 import java.util.HashMap;
 
-import jp.kanja.mselector.MultiEvent;
-import jp.kanja.mselector.MultipleSelector;
-import jp.kanja.mselector.SelectorItem;
+import jp.qood.mselector.MultiEvent;
+import jp.qood.mselector.MultipleSelector;
+import jp.qood.mselector.SelectorItem;
 
 import android.view.View;
 import android.view.View.OnClickListener;
